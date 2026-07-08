@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBA-Sheet // Oracle &amp; Unix Reference</title>
+<meta name="description" content="A searchable Oracle DBA and Unix/Exadata command reference — 1,200+ entries across 30 categories.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230b0d0a%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23e8a33d%22 font-family=%22monospace%22>$</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crt"></div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-prompt">root@dba-sheet</span><span class="brand-colon">:</span><span class="brand-path">~</span><span class="brand-dollar">$</span>
+      <h1>DBA&#8209;Sheet</h1>
+      <p class="brand-sub">Oracle &amp; Unix field reference</p>
+    </div>
+
+    <nav class="dirlisting" id="dirlisting" aria-label="Categories">
+      <!-- populated by app.js -->
+    </nav>
+
+    <div class="sidebar-foot">
+      <span id="totalCount">0</span> entries &middot; <span id="totalCats">0</span> categories
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="hamburger" id="hamburger" aria-label="Toggle categories">&#9776;</button>
+      <div class="prompt-search">
+        <span class="prompt-glyph">grep -i</span>
+        <input id="searchInput" type="text" placeholder="find a command, error, or topic…" autocomplete="off" spellcheck="false">
+        <span class="cursor" id="cursorBlink"></span>
+        <button class="clear-btn" id="clearBtn" title="Clear" aria-label="Clear search">&times;</button>
+      </div>
+      <div class="match-count" id="matchCount"></div>
+    </header>
+
+    <div class="content" id="content">
+      <!-- populated by app.js -->
+    </div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
